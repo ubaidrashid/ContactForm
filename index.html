@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution,.secondAttribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a ,.secondAttribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="custom-alert" id="customAlert">
+    <div class="head">
+      <div class="imgAlert"><img src="assets/images/icon-success-check.svg" alt=""></div>
+      <h4>Message Sent!</h4>
+    </div>
+    <p class="messageAlert"> Thanks for completing the form. We'll be in touch soon! </p>
+  </div>
+  <main>
+    <div class="containerForm">
+      <div class="form">
+        <h1 class="mainHead">Contact Us</h1>
+
+        <form action="post">
+          <div class="one">
+
+            <label for="FirstName">First Name</label>
+            <input type="text" class="firstName" placeholder="john">
+            <div class="errorFirst none"> This field is required</div>
+          </div>
+          <div class="two">
+
+            <label for="LastName">Last Name</label>
+            <input type="text" class="LastName"  placeholder="doe">
+            <div class="errorSecond none"> This field is required</div>
+
+          </div>
+          <div class="three">
+
+            <label for="email">Email</label>
+            <input type="text" class="email" placeholder="example@gmail.com">
+            <div class="errorEmail none">This field is required</div>
+
+          </div>
+          <div class="querry four">
+            <label for="querry">Querry Type</label>
+            <div class="querryOpt">
+              <div class="generalInquiry">
+                <div class="circlegen"><img class="gen none" src="assets/images/icon-radio-selected.svg" alt=""></div>
+                <span>General Inquiry</span>
+              </div>
+              <div class="supportRequest">
+                <div class="circlesup"><img class="sup none" src="assets/images/icon-radio-selected.svg" alt=""></div>
+                <span>Support Request</span>
+              </div>
+            </div>
+            <div class="errorQuerry none"> Please select a query type</div>
+          </div>
+          <div class="message five">
+            <label for="Message">Message</label>
+            <textarea id="text" rows="10" class="textArea" placeholder="About You..."></textarea>
+            <div class="errorMessage none">This field is required</div>
+        </div>
+          <div class="seven">
+            <div class="square">
+              <div class="squareCover">
+                <img class="square-img none" src="assets/images/icon-checkbox-check.svg" alt="">
+              </div>
+              <span class="consentSpan"> I consent to being contacted by the team</span>
+            </div>
+            <div class="errorConsent none"> To submit this form, please consent to being contacted</div>
+          </div>
+          <div class="six">
+            Submit
+          </div>
+        </form>
+      </div>
+      <div class="secondAttribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/ubaidrashid" target="_blank">Oss-Coding</a>.
+      </div>
+    </div>
+  </main>
+
+  <!-- 
+
+  First Name
+
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+
+
+  Message
+  This field is required
+
+
+ 
+
+  Submit
+
+  
+-->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ubaidrashid" target="_blank">Oss-Coding</a>.
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
